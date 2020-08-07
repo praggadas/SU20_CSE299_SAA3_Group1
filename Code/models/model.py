@@ -18,3 +18,20 @@ class Encoder(nn.Module):
         self.fc1 = nn.Linear(en_img_size*en_img_size*extracted_feature, size_fc)
         self.fc2 = nn.Linear(size_fc, no_classes+1)
         self.softmax = nn.Softmax(dim=1)
+        
+    def forward(self, x):
+        if torch.cuda.is_available():
+             x = x.cuda()
+        feature = self._resnet_extractor(x)
+        feature = self.adaptive_pool(feature)
+        
+        feature =  feature.view(feature.size()[0], -1)
+        x = F.relu(self.fc1(feature))
+        x = F.dropout(x,self.dropout)
+        x = F.relu(self.fc2(x))
+        x = self.softmax(x)
+        
+        return x
+
+        
+        
