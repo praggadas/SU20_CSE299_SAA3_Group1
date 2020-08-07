@@ -12,6 +12,7 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
     
         # feature extraction model (ResNet18=True)
+        resnet = models.resnet18(pretrained=True)
         self._resnet_extractor = nn.Sequential(*(list(resnet.children())[:-2]))
         self.en_img_size = en_img_size
         self.adaptive_pool = nn.AdaptiveAvgPool2d((en_img_size, en_img_size))#14,14,512
