@@ -1,0 +1,102 @@
+@media (max-width:1199px)
+{
+p {
+    font-family: 'Courgette', cursive;
+    position: absolute;
+    top: 193px;
+    right: 18%;
+    font-style: cursive;
+    font-size: 47px;
+}
+.get {position: absolute;top: 419px;left: 42%;color: black;text-transform: uppercase;font-size: 22px;font-weight: 700;border: 3px #3C7C60 solid;padding: 3px 17px;border-radius: 30px;}
+
+.contact {position: absolute;top: 419px;left: 24%;color: black;text-transform: uppercase;font-size: 15px;font-weight: 700;border: 3px #3C7C60 solid;padding: 7px 13px;border-radius: 30px;}
+
+.abt {position: absolute;top: 420px;left: 65%;color: black;text-transform: uppercase;font-size: 15px;font-weight: 700;border: 3px #3C7C60 solid;padding: 6px 15px;border-radius: 30px;}
+
+
+
+
+
+@media (max-width:991px)
+{
+
+	p{
+    	font-family: 'Courgette', cursive;
+    	position: absolute;
+    	top: 145px;
+    	right: 17%;
+    	font-style: cursive;
+    	font-size: 35px;
+    	text-align: center;
+    	text-transform: capitalize;
+    }
+
+	.get {position: absolute;top: 317px;left: 42%;color: black;text-transform: uppercase;font-size: 17px;font-weight: 700;border: 3px #3C7C60 solid;padding: 2px 17px;border-radius: 30px;}
+
+.contact {position: absolute;top: 317px;left: 24%;color: black;text-transform: uppercase;font-size: 13px;font-weight: 600;border: 3px #3C7C60 solid;padding: 4px 13px;border-radius: 30px;}
+
+.abt {position: absolute;top: 319px;left: 65%;color: black;text-transform: uppercase;font-size: 13px;font-weight: 600;border: 3px #3C7C60 solid;padding: 3px 15px;border-radius: 30px;}
+
+
+
+    
+
+
+}
+
+
+@media (max-width:767px)
+{
+
+
+	p{
+    	font-family: 'Courgette', cursive;
+    	position: absolute;
+    	top: 145px;
+    	right: 17%;
+    	font-style: cursive;
+    	font-size: 28px;
+    	text-align: center;
+    	text-transform: capitalize;
+    }
+
+	.get {position: absolute;top: 287px;left: 42%;color: black;text-transform: uppercase;font-size: 16px;font-weight: 700;border: 3px #3C7C60 solid;padding: 2px 17px;border-radius: 30px;}
+
+.contact {position: absolute;top: 287px;left: 24%;color: black;text-transform: uppercase;font-size: 12px;font-weight: 600;border: 3px #3C7C60 solid;padding: 3px 13px;border-radius: 30px;}
+
+.abt {position: absolute;top: 288px;left: 65%;color: black;text-transform: uppercase;font-size: 13px;font-weight: 600;border: 3px #3C7C60 solid;padding: 2px 15px;border-radius: 30px;}
+
+
+
+}
+
+
+@media (max-width:575px)
+{
+     	
+	p{
+    	font-family: 'Courgette', cursive;
+    	position: absolute;
+    	top: 145px;
+    	right: 5%;
+    	font-style: cursive;
+    	font-size: cursive;
+    	font-size: 17px;
+    	/* text-align: center; */
+    	text-transform: capitalize;
+    }
+
+	.get {position: absolute;top: 233px;left: 43%;color: black;text-transform: uppercase;font-size: 13px;font-weight: 600;border: 1px #3C7C60 solid;padding: 1px 17px;border-radius: 30px;}
+
+.contact {position: absolute;top: 275px;left: 45%;color: black;text-transform: uppercase;font-size: 12px;font-weight: 600;border: 1px #3C7C60 solid;padding: 1px 13px;border-radius: 30px;}
+
+.abt {position: absolute;top: 315px;left: 46%;color: black;text-transform: uppercase;font-size: 13px;font-weight: 600;border: 1px #3C7C60 solid;padding: 1px 15px;border-radius: 30px;}
+}
+
+
+
+
+
+
+

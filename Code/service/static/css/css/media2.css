@@ -1,0 +1,99 @@
+
+
+
+@media(max-width:991px)
+{
+h5 {
+    font-size: 35.4px;
+}
+.writing p {
+    font-size: 25px;}
+    }
+
+@media(max-width:767px)
+{
+
+}
+
+@media(max-width:575px)
+{
+
+
+body{
+	background-color: #FDDAE0;
+	margin: 108px 0px;
+    margin-top: 20px;
+}
+img{ max-width: 80%; }
+
+
+.individual{
+	background-color:#fff;
+	padding: 28px;
+}
+.text-center{padding-top: 40px;}
+.bio{}
+.bio a img{}
+.pic{object-fit: cover;
+    width: 100px;
+    height: 120px;
+    border: 3px solid #fff;
+    border-radius: 50%;}
+h3{}
+h5{}
+.writing p a{text-decoration:none;color:teal;font-weight: bold;font-size: 18px;}
+
+.writing p a:hover{text-decoration:underline;
+color:tomato;}
+.writing p{
+   
+    font-size: 6px;
+}
+.writing ul{
+    /* list-style-type: none; */
+    padding: none;
+    padding: 0px;
+    fontsize: -5px;
+}
+.writing ul li{}
+.writing ul li p{
+    font-size: 15px;
+    color:#884f74;
+}
+hr{
+border-bottom: none;
+    border: solid black 1px;
+margin-bottom: 45px;}
+
+    h3{
+    color: #e25050;
+}
+h5{
+    font-size: 1.40rem;
+    color: #e25050;
+}
+
+
+
+
+.white{color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4px;
+    padding-top: 14px;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 6.6px;
+    font-weight: 800;
+    margin-bottom: 72px;
+    font-size: 50px;
+}
+}
+
+@media(max-width:325px)
+{
+.writing p a {
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+    font-size: 14px;
+}

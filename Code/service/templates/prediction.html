@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<title>Upload File</title>
+
+
+<!-- {% if file_url %}
+<br>
+<img src="{{ file_url }}">
+{% endif %} -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <meta charset='utf-8'>
+    
+    <title>Automatic Birds Identification</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="static/css/bootstrap4-hello-world.min.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:300,400" rel="stylesheet">
+
+    <title>Generate Caption</title>
+
+    <style>
+        body {
+          font-family: Verdana, sans-serif;
+          margin: 0;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row > .column {
+          padding: 0 8px;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        .column {
+          float: left;
+          width: 20%;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: black;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          position: relative;
+          background-color: #fefefe;
+          margin: auto;
+          padding: 0;
+          width: 90%;
+          max-width: 1200px;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: white;
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #999;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .mySlides {
+          display: none;
+        }
+        
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        img {
+          margin-bottom: -4px;
+        }
+        
+        .caption-container {
+          text-align: center;
+          background-color: black;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        
+        img.hover-shadow {
+          transition: 0.3s;
+        }
+        
+        .hover-shadow:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        </style>
+
+
+
+
+
+  </head>
+  <body class="bg-gray2">
+
+
+
+      <div class="bg-dark navbar-dark text-white">
+        <div class="container">
+          <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                <a class="nav-link" href="{{ url_for('predict') }}">Prediction</a>
+              </div>
+            </div>
+          </nav>
+      
+        </div>
+      </div>
+
+ <!-- Heading and image -->
+
+
+ <!-- Upload file and prediction -->
+
+
+     <div class="container center" style="margin-top:30px;"> 
+      <div class="card text-center">
+        <div class="p-1 mb-1 text-white card-header" style="background: rgb(20, 146, 219); margin-top: 0px"> <br> <center><h1> Flower Prediction  </h1></center> <br> </div>
+        
+
+         <h1>ছবি আপলোড করুন (Upload your picture)</h1>
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            {{ form.photo }}
+            {% for error in form.photo.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+            <button type=submit class="btn btn-dark">Predict</button>
+            <!-- {{ form.submit }} -->
+        </form>
+
+        <div class="card-body">
+            {% if predict_result %}
+            <br>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col">
+                  <section style="margin-top: 30px;">
+                    <h2 style="color:rgb(7, 7, 7) ;"> ক্যপশন: </br>{{ predict_result }} </h1>
+                 </section>
+                </div>
+                <div class="col">
+                    <img src="{{ pred_image }}" width="250" height="400"> 
+                </div>
+            </div>
+           
+            <!-- <h1>Prediction: {{ predict_result }}</h1> -->
+            {% endif %}
+        </div>
+        </div>
+      </div>
+
+    
+   
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- For calling api and parsing data -->
+
+      
+      
+              
+    </script>
+  </body>
+</html>
