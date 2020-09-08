@@ -32,9 +32,9 @@ def load_model(model_path=None):
     if model_path == None:
         model_path = "./best_model.th"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    #model = model.load_state_dict(torch.load(model_path, map_location=device))
-    #model_dec = torch.load(model_path + "final_dec.pth", map_location=device)
-    model.eval()
+    model = model.load_state_dict(torch.load(model_path, map_location=device))
+    
+    model = model.eval()
     return model
 
 
